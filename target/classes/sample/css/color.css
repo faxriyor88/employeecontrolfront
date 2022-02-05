@@ -1,0 +1,146 @@
+.white {
+    -fx-background-color: white;
+}
+
+.brown {
+    -fx-background-color: #986307;
+}
+
+.green {
+    -fx-background-color: #0bbb0b;
+}
+
+.blue {
+    -fx-background-color: #2562ea;
+}
+
+.border {
+    -fx-border-color: black;
+}
+
+.hover:hover {
+    -fx-background-color: #4F86FF;
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.selected:selected {
+    -fx-border-color: green;
+    -fx-border-width: 0 0 0 5;
+}
+
+.pressed:pressed {
+    -fx-background-color: #7cea8d;
+    /*-fx-image: white;*/
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: -6,-6,-6,-6;
+}
+
+.focus:focused {
+    -fx-background-color: blue;
+}
+
+.bordergrey {
+    -fx-border-radius: 100px;
+    -fx-background-color: #dfdede;
+    -fx-background-radius: 100px;
+    -fx-text-fill: black;
+}
+
+.bordergreen {
+    -fx-border-radius: 100px;
+    -fx-background-color: #05aa05;
+    -fx-background-radius: 100px;
+    -fx-text-fill: white;
+}
+
+.borderradius {
+    -fx-border-radius: 20px;
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-border-color: #828080;
+}
+
+.bold {
+    -fx-font-weight: bold;
+}
+
+.textsize {
+    -fx-font-size: 30;
+}
+
+.fornumber {
+
+    -fx-background-radius: 20 20 20 20;
+    -fx-border-color: #828080;
+}
+
+.relative {
+    -fx-border-radius: 10px;
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-color: #828080;
+}
+
+.btnrelative {
+    -fx-border-radius: 10px;
+    -fx-background-color: #4F86FF;
+    -fx-background-radius: 10px;
+
+}
+
+.btn:hover {
+    -fx-cursor: hand;
+}
+
+.table-view {
+    -fx-background-color: #d5e1d5;
+}
+
+.saveborder {
+    -fx-border-radius: 20px;
+    -fx-background-color: #4F86FF;
+    -fx-background-radius: 20px;
+
+}
+
+.backborder {
+    -fx-border-radius: 20px;
+    -fx-background-color: #eb313d;
+    -fx-background-radius: 20px;
+}
+
+.backHover:hover {
+
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.imageButton {
+    -fx-border-radius: 20px;
+    -fx-background-color: #4F86FF;
+    -fx-background-radius: 20px;
+}
+
+.mainPage {
+    -fx-border-radius: 10px;
+    -fx-background-color: #5FA4F9FF;
+    -fx-background-radius: 10px;
+}
+.addPage {
+    -fx-border-radius: 10px;
+    -fx-background-color: #2562EAFF;
+    -fx-background-radius: 10px;
+}
+
+.date-picker {
+    -fx-background-radius: 20 20 20 20;
+}
+
+.date-picker > .text-field {
+    -fx-background-radius: 20 0 0 20;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-radius: 0 20 20 0;
+}

@@ -1,0 +1,55 @@
+.white {
+    -fx-background-color: white;
+}
+
+.brown {
+    -fx-background-color: #986307;
+}
+
+.green {
+    -fx-background-color: #0bbb0b;
+}
+
+.blue {
+    -fx-background-color: #4F86FF;
+}
+
+.border {
+    -fx-border-color: black;
+}
+
+.hover:hover {
+    -fx-background-color: #4F86FF;
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.selected:selected {
+    -fx-border-color: green;
+    -fx-border-width: 0 0 0 5;
+}
+
+.pressed:pressed {
+    -fx-background-color: blue;
+    -fx-image: white;
+}
+
+.focus:focused {
+    -fx-background-color: blue;
+}
+
+.bordergrey{
+    -fx-border-radius: 100px;
+    -fx-background-color: #dfdede;
+    -fx-background-radius: 100px;
+    -fx-text-fill: black;
+}
+
+.bordergreen {
+    -fx-border-radius: 100px;
+    -fx-background-color: #05aa05;
+    -fx-background-radius: 100px;
+    -fx-text-fill: white;
+}
+
+

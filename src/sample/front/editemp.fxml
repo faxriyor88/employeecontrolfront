@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="860.0" style="-fx-background-color: white;" stylesheets="@../css/color.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditEmpController">
+   <content>
+      <AnchorPane fx:id="anchorpane" prefHeight="3157.0" prefWidth="840.0" style="-fx-background-color: white;">
+         <children>
+            <VBox fx:id="vboxMain" layoutX="17.0" prefHeight="3153.0" prefWidth="665.0" AnchorPane.leftAnchor="90.0">
+               <children>
+                  <Label prefHeight="73.0" prefWidth="671.0" stylesheets="@../css/color.css" text="Tahrirlash">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="256.0" text="Ismi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="ismi" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="95.0" prefHeight="39.0" prefWidth="256.0" text="Familiyasi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="familyasi" layoutX="10.0" layoutY="134.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label prefHeight="39.0" prefWidth="256.0" text="Otasining ismi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="sharifi" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label prefHeight="39.0" prefWidth="256.0" text="Tug'ilgan kuni">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="birthday" prefHeight="67.0" prefWidth="665.0" stylesheets="@../css/color.css">
+                     <styleClass>
+                        <String fx:value="borderradius" />
+                        <String fx:value="bold" />
+                        <String fx:value="textsize" />
+                     </styleClass>
+                  </DatePicker>
+                  <Label layoutX="10.0" layoutY="461.0" prefHeight="39.0" prefWidth="256.0" text="Tug'ilgan joyi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <MenuButton fx:id="birthdayplace" mnemonicParsing="false" prefHeight="67.0" prefWidth="665.0" styleClass="borderradius" stylesheets="@../css/color.css" text="MenuButton">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </MenuButton>
+                  <Label layoutX="10.0" layoutY="567.0" prefHeight="39.0" prefWidth="256.0" text="Ish joyi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <MenuButton fx:id="ishjoyi" layoutX="10.0" layoutY="696.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="665.0" styleClass="borderradius" stylesheets="@../css/color.css" text="MenuButton" wrapText="true">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </MenuButton>
+                  <Label layoutX="10.0" layoutY="673.0" prefHeight="39.0" prefWidth="256.0" text="Lavozimi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="lavozimi" layoutX="10.0" layoutY="712.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="779.0" prefHeight="39.0" prefWidth="256.0" text="Millati">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="millati" layoutX="10.0" layoutY="818.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="1065.0" prefHeight="39.0" prefWidth="402.0" text="Ma'lumoti bo'yicha mutaxasisligi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="malboymutaxasisligi" layoutX="10.0" layoutY="1104.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="1201.0" prefHeight="39.0" prefWidth="402.0" text="Ilmiy darajasi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="ilmiydaraja" layoutX="10.0" layoutY="1240.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="1337.0" prefHeight="39.0" prefWidth="402.0" text="Qaysi chet tillarini bilishi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="qaysichettili" layoutX="10.0" layoutY="1376.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="1443.0" prefHeight="39.0" prefWidth="402.0" text="Ma'lumoti">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="malumoti" layoutX="10.0" layoutY="1482.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="1549.0" prefHeight="39.0" prefWidth="402.0" text="Saylov organi a'zosi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="saylovorganiazosi" layoutX="10.0" layoutY="1588.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="1655.0" prefHeight="39.0" prefWidth="402.0" text="Partiyaviyligi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="partiyaviyligi" layoutX="10.0" layoutY="1694.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="1761.0" prefHeight="39.0" prefWidth="402.0" text="Ilmiy unvoni">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="ilmiyunvoni" layoutX="10.0" layoutY="1800.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="1867.0" prefHeight="39.0" prefWidth="402.0" text="Harbiy unvoni">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="harbiyunvoni" layoutX="10.0" layoutY="1906.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="2153.0" prefHeight="39.0" prefWidth="462.0" text="Davlat mukofoti bilan taqdirlanganligi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="davlatmukofoti" layoutX="10.0" layoutY="2192.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="2259.0" prefHeight="39.0" prefWidth="402.0" text="Tamomlagan joyi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="tamomlaganjoyi" layoutX="10.0" layoutY="2298.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="2425.0" prefHeight="39.0" prefWidth="402.0" text="Xodim rasmini yuklash">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="imageName" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="350.0" prefHeight="67.0" prefWidth="665.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <graphic>
+                        <Button fx:id="uploadImage" alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="65.0" prefWidth="50.0" styleClass="imageButton" stylesheets="@../css/color.css">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/upload.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="VboxRelative" prefHeight="114.0" prefWidth="665.0" stylesheets="@../css/color.css">
+                     <children>
+                        <HBox prefHeight="74.0" prefWidth="663.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="67.0" prefWidth="27.0" styleClass="relative" stylesheets="@../css/color.css" text="N" wrapText="true" />
+                              <Label alignment="CENTER" prefHeight="67.0" prefWidth="100.0" styleClass="relative" stylesheets="@../css/color.css" text="Қарин-дошлиги" wrapText="true" />
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="67.0" prefWidth="146.0" styleClass="relative" stylesheets="@../css/color.css" text="Фамилияси, исми ва отасининг исми " wrapText="true" />
+                              <Label alignment="CENTER" layoutX="126.0" layoutY="10.0" prefHeight="67.0" prefWidth="147.0" styleClass="relative" stylesheets="@../css/color.css" text="Туғилган йили ва жойи" wrapText="true" />
+                              <Label alignment="CENTER" layoutX="273.0" layoutY="10.0" prefHeight="67.0" prefWidth="156.0" styleClass="relative" stylesheets="@../css/color.css" text="Иш жойи ва лавозими" wrapText="true" />
+                              <Label alignment="CENTER" layoutX="420.0" layoutY="10.0" prefHeight="67.0" prefWidth="166.0" styleClass="relative" stylesheets="@../css/color.css" text="Турар жойи" wrapText="true" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox fx:id="VboxCarOfLabor" layoutX="10.0" layoutY="2561.0" prefHeight="114.0" prefWidth="665.0" stylesheets="@../css/color.css">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="402.0">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="67.0" prefWidth="30.0" styleClass="relative" stylesheets="@../css/color.css" text="N">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                              <TextField prefWidth="642.0" styleClass="borderradius" stylesheets="@../css/color.css" text="Mehnat faoliyati">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="71.0" prefWidth="665.0" spacing="180.0" stylesheets="@../css/color.css">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="back" mnemonicParsing="false" prefHeight="68.0" prefWidth="267.0" stylesheets="@../css/color.css" text="ORQAGA">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="backHover" />
+                              <String fx:value="backborder" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="saqlash" mnemonicParsing="false" prefHeight="68.0" prefWidth="268.0" stylesheets="@../css/color.css" text="SAQLASH">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="hover" />
+                              <String fx:value="saveborder" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="plusRel" layoutX="755.0" layoutY="2718.0" minHeight="20.0" minWidth="47.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="47.0" styleClass="btnrelative" stylesheets="@../css/color.css" AnchorPane.leftAnchor="755.0" AnchorPane.topAnchor="2718.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" styleClass="btnrelative">
+                     <image>
+                        <Image url="@../image/568088.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="plusLab" layoutX="755.0" layoutY="2870.0" minHeight="25.0" minWidth="47.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="47.0" styleClass="btnrelative" stylesheets="@../css/color.css" AnchorPane.leftAnchor="755.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" styleClass="btnrelative">
+                     <image>
+                        <Image url="@../image/568088.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="minRel" layoutX="755.0" layoutY="2752.0" minHeight="20.0" minWidth="47.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="47.0" styleClass="btnrelative" stylesheets="@../css/color.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" styleClass="btnrelative">
+                     <image>
+                        <Image url="@../image/minus-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="minLab" layoutX="755.0" layoutY="2904.0" minHeight="25.0" minWidth="47.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="47.0" styleClass="btnrelative" stylesheets="@../css/color.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" styleClass="btnrelative">
+                     <image>
+                        <Image url="@../image/minus-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></AnchorPane>
+   </content>
+</ScrollPane>

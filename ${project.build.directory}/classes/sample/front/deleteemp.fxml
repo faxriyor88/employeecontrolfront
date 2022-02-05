@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ExpansionPanel.CollapsedPanel?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="vbox" layoutX="10.0" layoutY="10.0" prefHeight="522.0" prefWidth="978.0" spacing="4.0" styleClass="border" stylesheets="@../css/color.css">
+         <children>
+            <HBox prefHeight="55.0" prefWidth="381.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="55.0" prefWidth="18.0" styleClass="border" stylesheets="@../css/color.css" text="N" wrapText="true" />
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="116.0" styleClass="border" stylesheets="@../css/color.css" text="w1647 855" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="55.0" prefWidth="147.0" styleClass="border" stylesheets="@../css/color.css" text="w1627 1415" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="126.0" layoutY="10.0" prefHeight="55.0" prefWidth="147.0" styleClass="border" stylesheets="@../css/color.css" text="Туғилган йили ва жойи" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="273.0" layoutY="10.0" prefHeight="55.0" prefWidth="147.0" styleClass="border" stylesheets="@../css/color.css" text="Иш жойи ва лавозими" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="420.0" layoutY="10.0" prefHeight="55.0" prefWidth="147.0" styleClass="border" stylesheets="@../css/color.css" text="Турар жойи" wrapText="true" />
+               </children>
+            </HBox>
+            <DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="706.0">
+                <expandableContent>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                </expandableContent>
+               <header>
+                  <Label text="Label" />
+               </header>
+               <graphic>
+                  <Label text="Label" />
+               </graphic>
+               <content>
+                  <Label text="Label" />
+               </content>
+            </DialogPane>
+         </children>
+      </VBox>
+      <ExpansionPanel.CollapsedPanel layoutX="69.0" layoutY="589.0" prefHeight="38.0" prefWidth="578.0">
+          <titleNodes>
+              <Label text="TripName" />
+              <Label text="Caribbean cruise" />
+            <Label layoutX="97.0" layoutY="20.0" text="Caribbean cruise" />
+            <Label layoutX="174.0" layoutY="20.0" text="Caribbean cruise" />
+            <Label layoutX="200.0" layoutY="20.0" prefHeight="18.0" prefWidth="116.0" text="Caribbean cruise" />
+          </titleNodes>
+      </ExpansionPanel.CollapsedPanel>
+   </children>
+</AnchorPane>

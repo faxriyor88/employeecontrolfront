@@ -1,0 +1,5 @@
+.pressedBlue:pressed {
+    /*-fx-image: white;*/
+   /*//// -fx-padding: 10 15 13 15;*/
+    -fx-background-insets:-5,-5,-5,-5 ;
+}

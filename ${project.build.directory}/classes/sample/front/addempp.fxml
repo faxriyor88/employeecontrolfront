@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="1645.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddEmpController">
+   <content>
+      <AnchorPane prefHeight="1471.0" prefWidth="1627.0">
+         <children>
+            <HBox layoutX="20.0" layoutY="102.0" prefHeight="1279.0" prefWidth="1566.0" spacing="8.0">
+               <children>
+                  <VBox prefHeight="1022.0" prefWidth="407.0" spacing="20.0" stylesheets="@../css/color.css">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" prefHeight="55.0" prefWidth="400.0" text="1.Xodim ismi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="55.0" prefWidth="400.0" text="2.Xodim familiyasi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="69.0" prefHeight="55.0" prefWidth="400.0" text="3.Xodim sharifi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="128.0" prefHeight="55.0" prefWidth="400.0" text="4.Xodim tug'ilgan kuni">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="55.0" prefWidth="400.0" text="5.Xodim tug'ilgan joyi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="187.0" prefHeight="55.0" prefWidth="400.0" text="6.Xodim ish joyi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="246.0" prefHeight="55.0" prefWidth="400.0" text="7.Xodim lavozimi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="380.0" prefHeight="55.0" prefWidth="400.0" text="8.Xodim millati">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="454.0" prefHeight="55.0" prefWidth="400.0" text="9.Xodim ma'lumoti bo'yicha mutaxasisligi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="528.0" prefHeight="55.0" prefWidth="400.0" text="10.Xodim ilmiy darajasi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="602.0" prefHeight="55.0" prefWidth="400.0" text="11.Xodim qaysi chet tillarini bilishi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="668.0" prefHeight="55.0" prefWidth="400.0" text="12.Xodim ma'lumoti">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="742.0" prefHeight="55.0" prefWidth="400.0" text="13.Xodim saylov organi a'zosi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="816.0" prefHeight="55.0" prefWidth="400.0" text="14.Xodim partiyaviyligi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="890.0" prefHeight="55.0" prefWidth="400.0" text="15.Xodim ilmiy unvoni">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="964.0" prefHeight="55.0" prefWidth="400.0" text="16.Xodim harbiy unvoni">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="982.0" prefHeight="55.0" prefWidth="400.0" text="17.Xodim davlat mukofoti bilan taqdirlanganligi (qanaqa)">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="658.0" prefHeight="55.0" prefWidth="400.0" text="18.Xodim tamomlagan joyi">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="985.0" prefHeight="55.0" prefWidth="400.0" text="19.Xodim mehnat faoliyati">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="1022.0" prefWidth="407.0" spacing="17.0" stylesheets="@../css/color.css">
+                     <children>
+                        <TextField fx:id="ismi" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="familiyasi" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="11.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="sharifi" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="86.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <DatePicker fx:id="tugilgansana" prefHeight="54.0" prefWidth="414.0" promptText="Sanani tanlang" />
+                        <SplitMenuButton mnemonicParsing="false" prefHeight="54.0" prefWidth="415.0" text="Viloyat va tumanni tanlang">
+                           <items>
+                              <Menu mnemonicParsing="false" text="Toshkent">
+                                 <items>
+                                    <MenuItem fx:id="mirobod" mnemonicParsing="false" text="Mirobod" />
+                                    <MenuItem fx:id="sergeli" mnemonicParsing="false" text="Sergeli" />
+                                 </items>
+                              </Menu>
+                              <Menu mnemonicParsing="false" text="Jizzax">
+                                 <items>
+                                    <MenuItem fx:id="forish" mnemonicParsing="false" text="Forish" />
+                                    <MenuItem fx:id="zafarobod" mnemonicParsing="false" text="Zafarobod" />
+                                    <MenuItem fx:id="zomin" mnemonicParsing="false" text="Zomin" />
+                                 </items>
+                              </Menu>
+                           </items>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </SplitMenuButton>
+                        <SplitMenuButton layoutX="10.0" layoutY="294.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="419.0" text="Ish joyini tanlang">
+                           <items>
+                              <Menu fx:id="toshfilial" mnemonicParsing="false" text="Toshkentfiliali">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Mirobod" />
+                                    <MenuItem mnemonicParsing="false" text="Sergeli" />
+                                 </items>
+                              </Menu>
+                              <Menu fx:id="jizfilial" mnemonicParsing="false" text="Jizzaxfilial">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Action 1" />
+                                    <MenuItem mnemonicParsing="false" text="Action 1" />
+                                    <MenuItem mnemonicParsing="false" text="Action 1" />
+                                 </items>
+                              </Menu>
+                           </items>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </SplitMenuButton>
+                        <TextField fx:id="lavozimi" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="311.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="millati" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="371.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="malumotiboyichamutaxasisligi" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="443.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="ilmiydarajasi" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="515.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="chettili" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="587.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="malumoti" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="659.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="saylovorgan" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="731.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="partiyaviyligi" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="803.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="ilmiyunvon" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="875.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="harbiyunvon" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="947.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="davlatmukofot" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="1090.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tamomlaganjoyi" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="651.0" prefHeight="55.0" prefWidth="400.0" promptText="ma'lumot kiriting">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextArea fx:id="mehnatfaoliyat" prefHeight="29.0" prefWidth="384.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="1279.0" prefWidth="727.0" spacing="15.0" stylesheets="@../css/color.css">
+                     <children>
+                        <VBox fx:id="vbox" prefHeight="911.0" prefWidth="721.0" spacing="4.0" stylesheets="@../css/color.css">
+                           <children>
+                              <HBox prefHeight="55.0" prefWidth="719.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="55.0" prefWidth="27.0" styleClass="border" stylesheets="@../css/color.css" text="N" wrapText="true" />
+                                    <Label alignment="CENTER" prefHeight="55.0" prefWidth="100.0" styleClass="border" stylesheets="@../css/color.css" text="Қарин-дошлиги" wrapText="true" />
+                                    <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="55.0" prefWidth="146.0" styleClass="border" stylesheets="@../css/color.css" text="Фамилияси, исми ва отасининг исми " wrapText="true" />
+                                    <Label alignment="CENTER" layoutX="126.0" layoutY="10.0" prefHeight="55.0" prefWidth="147.0" styleClass="border" stylesheets="@../css/color.css" text="Туғилган йили ва жойи" wrapText="true" />
+                                    <Label alignment="CENTER" layoutX="273.0" layoutY="10.0" prefHeight="55.0" prefWidth="156.0" styleClass="border" stylesheets="@../css/color.css" text="Иш жойи ва лавозими" wrapText="true" />
+                                    <Label alignment="CENTER" layoutX="420.0" layoutY="10.0" prefHeight="55.0" prefWidth="166.0" styleClass="border" stylesheets="@../css/color.css" text="Турар жойи" wrapText="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <ImageView fx:id="imageView" fitHeight="229.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="250.0" top="70.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="selectr" mnemonicParsing="false" prefHeight="31.0" prefWidth="199.0" stylesheets="@../css/color.css" text="Rasm tanlash" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets left="250.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="blue" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets left="10.0" />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button fx:id="plus" layoutX="1585.0" layoutY="102.0" minHeight="50.0" minWidth="47.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="47.0" stylesheets="@../css/color.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" styleClass="blue">
+                     <image>
+                        <Image url="@../image/568088.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="blue" />
+                  <String fx:value="pressed" />
+               </styleClass>
+            </Button>
+            <Button fx:id="qoshish" layoutX="720.0" layoutY="1407.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="175.0" stylesheets="@../css/color.css" text="Qo'shish">
+               <styleClass>
+                  <String fx:value="blue" />
+                  <String fx:value="hover" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

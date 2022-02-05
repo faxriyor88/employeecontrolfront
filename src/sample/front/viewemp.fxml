@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="1645.0" stylesheets="@../css/servicebutton.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewEmpController">
+   <content>
+      <TableView fx:id="tableview" prefHeight="827.0" prefWidth="1645.0" stylesheets="@../css/tableview.css">
+         <columns>
+            <TableColumn fx:id="num" prefWidth="34.999969482421875" text="N" />
+            <TableColumn fx:id="fullname" prefWidth="346.0" text="Familyasi,Ismi,Sharifi" />
+            <TableColumn fx:id="tashkilot" prefWidth="395.0" text="Tashkilot" />
+            <TableColumn fx:id="lavozim" prefWidth="281.0" text="Lavozimi" />
+            <TableColumn fx:id="viloyattuman" prefWidth="239.0" text="Viloyat,Tuman" />
+            <TableColumn fx:id="birthday" minWidth="0.0" prefWidth="201.0" text="Tug'ilgan kuni" />
+            <TableColumn fx:id="qoshimcha" prefWidth="132.0" text="Qo'sh" />
+         </columns>
+      </TableView>
+   </content>
+</ScrollPane>

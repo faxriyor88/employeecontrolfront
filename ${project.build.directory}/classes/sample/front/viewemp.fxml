@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="875.0" prefWidth="1659.0" styleClass="bordergreen" stylesheets="@../css/color.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewEmpController">
+   <children>
+      <TableView fx:id="tableview" layoutX="-1.0" layoutY="-1.0" prefHeight="875.0" prefWidth="1660.0" styleClass="bordergreen">
+        <columns>
+            <TableColumn prefWidth="61.0" text="Xodim" />
+          <TableColumn prefWidth="370.0" text="Familyasi,Ismi,Sharifi" />
+          <TableColumn prefWidth="282.0" text="Lavozimi" />
+            <TableColumn prefWidth="295.0" text="Ishlash joyi" />
+            <TableColumn prefWidth="338.0" text="Tug'ilgan kuni" />
+            <TableColumn prefWidth="388.0" text="Qo'shimcha ma'lumot" />
+            <TableColumn prefWidth="232.0" text="Qo'shimcha ma'lumot" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

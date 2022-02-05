@@ -1,0 +1,9 @@
+.pressedser:pressed{
+  -fx-background-insets:-4 ,-4 ,-4, -4;
+}
+
+.hoverser:hover {
+  -fx-background-color: #ff4f90;
+  -fx-background-color: #ffd000;
+  -fx-text-fill: white;
+}

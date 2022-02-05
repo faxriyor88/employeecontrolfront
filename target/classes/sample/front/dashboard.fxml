@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DashboardController">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="714.0" prefWidth="1257.0" styleClass="accordion" stylesheets="@../css/color.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox fx:id="VBoxButton" prefHeight="641.0" prefWidth="273.0" style="-fx-background-color: #2562EAFF;" stylesheets="@../css/color.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="viewButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="292.0" stylesheets="@../css/copycolor.css" text="Bosh sahifa" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" styleClass="white">
+                           <image>
+                              <Image url="@../image/home-7-xxl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets right="5.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <styleClass>
+                        <String fx:value="mainPage" />
+                        <String fx:value="hover" />
+                        <String fx:value="pressedBlue" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="addButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="292.0" text="Xodim qo'shish" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/add-user-2-xl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets right="5.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="hover" />
+                        <String fx:value="addPage" />
+                        <String fx:value="pressedBlue" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@../css/color.css" />
+                        <URL value="@../css/copycolor.css" />
+                     </stylesheets>
+                  </Button>
+                  <Button fx:id="exitButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="292.0" stylesheets="@../css/copycolor.css" text="Chiqish" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/arrow-123-xxl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets right="5.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="addPage" />
+                        <String fx:value="hover" />
+                        <String fx:value="pressedBlue" />
+                     </styleClass>
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox fx:id="HBoxbutton" prefHeight="117.0" prefWidth="1257.0" styleClass="white" stylesheets="@../css/color.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/kasaba.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/color.css" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane fx:id="contentArea" prefHeight="150.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
