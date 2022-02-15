@@ -1,11 +1,9 @@
 package sample;
 
 import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.css.PseudoClass;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
@@ -14,12 +12,9 @@ import javafx.scene.input.MouseButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import sample.connect.ConnectEmployeeController;
-import sample.dto.ApiResponse;
 import sample.dto.EmployeeAdditonalDTO;
 import sample.dto.ShowEmployee;
 import sample.model.Employee;
@@ -241,7 +236,7 @@ public class ViewEmpController implements Initializable {
                             UUID id = employees.get(employeeId[0] - 1).getId();
 
                             try {
-                                ConnectEmployeeController.downloader(id);
+                                ConnectEmployeeController.employeeDownloader(id);
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
@@ -254,7 +249,7 @@ public class ViewEmpController implements Initializable {
 //                            UUID id = employees.get(employeeId[0] - 1).getId();
 //
 //                            try {
-//                                ConnectEmployeeController.downloader(id);
+//                                ConnectEmployeeController.employeeDownloader(id);
 //                            } catch (IOException e) {
 //                                e.printStackTrace();
 //                            }

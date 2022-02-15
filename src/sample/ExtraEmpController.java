@@ -109,7 +109,7 @@ public class ExtraEmpController implements Initializable {
             ViewEmpController.permission = false;
             Employee e = ViewEmpController.employeeTrans;
             EmployeeAdditonalDTO extra = ViewEmpController.additonalTrans;
-            String[] split = e.getFullname().split(",");
+            String[] split = e.getFullname().split(" ");
             ishjoyi.setPrefHeight(100);
 
             ismi.setText(split[1]);

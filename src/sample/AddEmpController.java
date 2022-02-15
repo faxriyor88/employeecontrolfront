@@ -204,7 +204,7 @@ public class AddEmpController implements Initializable {
                     for (int i = 1; i <= k; i++) {
                         me.add(new MehnatFaoliyatiDto(areasLabor[i].getText()));
                     }
-                    EmployeeDto employeeDto = new EmployeeDto((familyasi.getText() + "," + ismi.getText() + "," + sharifi.getText()), regionId[0], districtId[0],
+                    EmployeeDto employeeDto = new EmployeeDto((familyasi.getText() + " " + ismi.getText() + " " + sharifi.getText()), regionId[0], districtId[0],
                             companyId[0], lavozimi.getText(), informationAboutRelativeDTOS, birthday.getEditor().getText(), millati.getText(), malumoti.getText(),
                             malboymutaxasisligi.getText(), ilmiydaraja.getText(), ilmiyunvoni.getText(), qaysichettili.getText(),
                             davlatmukofoti.getText(), saylovorganiazosi.getText(), partiyaviyligi.getText(), tamomlaganjoyi.getText(),

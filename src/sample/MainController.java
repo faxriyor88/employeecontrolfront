@@ -6,13 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import org.apache.commons.codec.binary.Base64;
-import sample.connect.ConnectEmployeeController;
 
-import javax.swing.text.View;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -22,11 +16,13 @@ public class MainController extends Application {
     public static Stage dashboardpage;
     public static Stage changeloginpage;
     public static Stage changeDashboardpage;
+    public static Stage changeviewdocpage;
+    public static Stage changeviewandAdddocpage;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-            loginPage(primaryStage);
-            loginpage = primaryStage;
+        loginPage(primaryStage);
+        loginpage = primaryStage;
 
 
     }
@@ -123,18 +119,61 @@ public class MainController extends Application {
         }
     }
 
-//    public static void main(String[] args) throws Exception {
-//
-//        File f = new File("D:\\ZoomDarslar1\\EmployeeControl\\imagelocation\\2bb5cd8c-b182-4f8f-ac4d-153c4c666be0.png");
-//        String encodstring = encodeFileToBase64Binary(f);
-//        System.out.println(encodstring);
-//    }
+    public static void viewDocumentPage(Stage stage) {
+        Parent root = null;
+        try {
+            FXMLLoader loader = new FXMLLoader(MainController.class.getResource("front/viewdocument.fxml"));
+            ViewDocumentController documentController = new ViewDocumentController();
+            loader.setControllerFactory(param -> documentController);
+            root = loader.load();
+            stage.setTitle("DOC");
+            stage.getIcons().add(new Image("sample/image/kasaba.png"));
+            //   stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            stage.show();
+            changeviewdocpage = stage;
+        } catch (IOException ignored) {
+        }
+    }
 
-    private static String encodeFileToBase64Binary(File file) throws Exception {
-        FileInputStream fileInputStreamReader = new FileInputStream(file);
-        byte[] bytes = new byte[(int) file.length()];
-        fileInputStreamReader.read(bytes);
-        return new String(Base64.encodeBase64(bytes), "UTF-8");
+    public static void viewAndAddDocumentPage(Stage stage) {
+        Parent root = null;
+        try {
+            FXMLLoader loader = new FXMLLoader(MainController.class.getResource("front/viewandaddDocument.fxml"));
+            ViewAndAddDocumentController viewAndAddDocumentController = new ViewAndAddDocumentController();
+            loader.setControllerFactory(param -> viewAndAddDocumentController);
+            root = loader.load();
+            stage.setTitle("DOC");
+            stage.getIcons().add(new Image("sample/image/kasaba.png"));
+            //   stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            stage.show();
+            changeviewandAdddocpage=stage;
+        } catch (IOException ignored) {
+        }
+    }
+
+    public static Stage addDocumentPage(Stage stage) {
+        Parent root = null;
+        try {
+            FXMLLoader loader = new FXMLLoader(MainController.class.getResource("front/addDocument.fxml"));
+            AddDocumentController addDocumentController = new AddDocumentController();
+            loader.setControllerFactory(param -> addDocumentController);
+            root = loader.load();
+            stage.setTitle("DOC");
+            stage.getIcons().add(new Image("sample/image/kasaba.png"));
+            //   stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            stage.show();
+            changeDashboardpage = stage;
+            return dashboardpage;
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        MainController.launch(args);
     }
 
 

@@ -169,7 +169,7 @@ public class EditEmpController /*extends DashboardController*/ implements Initia
             areaList.add(new TextArea());
             Employee e = ViewEmpController.employeeTrans;
             EmployeeAdditonalDTO extra = ViewEmpController.additonalTrans;
-            String[] split = e.getFullname().split(",");
+            String[] split = e.getFullname().split(" ");
            // ishjoyi.setPrefHeight(100);
             ismi.setText(split[1]);
             familyasi.setText(split[0]);
@@ -365,7 +365,7 @@ public class EditEmpController /*extends DashboardController*/ implements Initia
                     for (int i = 1; i <= k; i++) {
                         me.add(new MehnatFaoliyatiDto(areasLabor[i].getText()));
                     }
-                    EmployeeDto employeeDto = new EmployeeDto((familyasi.getText() + "," + ismi.getText() + "," + sharifi.getText()), regionId[0], districtId[0],
+                    EmployeeDto employeeDto = new EmployeeDto((familyasi.getText() + " " + ismi.getText() + " " + sharifi.getText()), regionId[0], districtId[0],
                             companyId[0], lavozimi.getText(), informationAboutRelativeDTOS, birthday.getEditor().getText(), millati.getText(), malumoti.getText(),
                             malboymutaxasisligi.getText(), ilmiydaraja.getText(), ilmiyunvoni.getText(), qaysichettili.getText(),
                             davlatmukofoti.getText(), saylovorganiazosi.getText(), partiyaviyligi.getText(), tamomlaganjoyi.getText(),

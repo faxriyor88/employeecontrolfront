@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1020.0" minHeight="1020.0" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewAndAddDocumentController">
+    <children>
+        <TabPane layoutX="7.0" layoutY="51.0" prefHeight="1030.0" prefWidth="1915.0" stylesheets="@../css/tabpane.css" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="muddatiotgan">
+               <graphic>
+                  <Label fx:id="labelotgan" alignment="CENTER" prefHeight="70.0" prefWidth="223.0" style="-fx-background-color: #4F86FF; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Muddati o'tgan" textFill="WHITE" />
+               </graphic>
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane fx:id="anchormuddatiotgan" minHeight="0.0" minWidth="0.0" prefHeight="1075.0" prefWidth="1915.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+                </Tab>
+                <Tab fx:id="muddatikelgan">
+               <graphic>
+                  <Label fx:id="labelkelgan" alignment="CENTER" prefHeight="70.0" prefWidth="223.0" style="-fx-background-color: #4F86FF; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Muddati kelgan" textFill="WHITE" />
+               </graphic>
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane fx:id="anchormuddatikelgan" minHeight="0.0" minWidth="0.0" prefHeight="1075.0" prefWidth="1915.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+                </Tab>
+                <Tab fx:id="muddatibor">
+               <graphic>
+                  <Label fx:id="labelbor" alignment="CENTER" prefHeight="70.0" prefWidth="223.0" style="-fx-background-color: #4F86FF; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Muddati bor" textFill="WHITE" />
+               </graphic>
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                    <content>
+                      <AnchorPane fx:id="anchormuddatibor" minHeight="0.0" minWidth="0.0" prefHeight="1075.0" prefWidth="1915.0" />
+                    </content>
+                  </ScrollPane>
+               </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button fx:id="plus" layoutX="1777.0" layoutY="9.0" minHeight="20.0" minWidth="47.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="131.0" text="Qo'shish" textFill="#fffafa">
+            <font>
+                <Font size="19.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" styleClass="btnrelative">
+                    <image>
+                        <Image url="@../image/plus-4-xl.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <stylesheets>
+                <URL value="@../css/color.css" />
+                <URL value="@../css/servicebutton.css" />
+            </stylesheets>
+            <styleClass>
+                <String fx:value="btnrelative" />
+                <String fx:value="pressedser" />
+            </styleClass>
+        </Button>
+      <Button fx:id="left" layoutX="14.0" layoutY="9.0" minHeight="20.0" minWidth="47.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="131.0" text="Chiqish" textFill="#fffafa">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" styleClass="btnrelative">
+               <image>
+                  <Image url="@../image/arrow-123-xxl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../css/color.css" />
+            <URL value="@../css/servicebutton.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="btnrelative" />
+            <String fx:value="pressedser" />
+         </styleClass>
+      </Button>
+      <StackPane layoutX="250.0" layoutY="55.0" prefHeight="51.0" prefWidth="44.0">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+            <Text fx:id="textotgan" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="535.0" layoutY="55.0" prefHeight="51.0" prefWidth="44.0">
+         <children>
+            <Circle fill="#cda90cde" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+            <Text fx:id="textkelgan" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="817.0" layoutY="55.0" prefHeight="51.0" prefWidth="44.0">
+         <children>
+            <Circle fill="#29b112de" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+            <Text fx:id="textbor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+         </children>
+      </StackPane>
+    </children>
+</AnchorPane>

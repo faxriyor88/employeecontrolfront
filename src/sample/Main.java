@@ -1,105 +1,31 @@
 package sample;
 
+import com.google.gson.Gson;
+import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.methods.GetMethod;
+import sample.dto.DocumentEffectorDtoResponse;
+import sample.page.PageDocument;
+
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+            Gson gson = new Gson(); //empproba.herokuapp.com
+            GetMethod getMethod = new GetMethod("http://localhost:8080/api/viewdocument/0?deadlinetype=GREEN"/*"http://localhost:8080/api/employee/getallemployee/0"*/);
+            getMethod.setRequestHeader("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dHI3IiwiaWF0IjoxNjQ0MzI2ODkzLCJleHAiOjE2NDQzNDEyOTN9.8rwMu1NdWm7guRvwd5yKmn56kZRmGL2IJpMr0FXUq6Q");
+            HttpClient client = new HttpClient();
+            int i = client.executeMethod(getMethod);
+            System.out.println(i);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(getMethod.getResponseBodyAsStream()));
+            PageDocument list = gson.fromJson(reader, PageDocument.class);
+            System.out.println(list.getContent().get(0).getDeadLineDay());
+
 
     }
+
 }
 
-//import javafx.application.Application;
-//import javafx.application.Platform;
-//import javafx.scene.Scene;
-//import javafx.scene.control.Label;
-//import javafx.scene.layout.StackPane;
-//import javafx.stage.Stage;
-//
-//public class Main extends Application {
-//    private String text = "";
-//
-//    @Override // Override the start method in the Application class
-//    public void start(Stage primaryStage) {
-//        StackPane pane = new StackPane();
-//        Label lblText = new Label("Programming is fun");
-//        pane.getChildren().add(lblText);
-//
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                try {
-//                    while (true) {
-//                        if (lblText.getText().trim().length() == 0)
-//                            text = "Welcome";
-//                        else
-//                            text = "";
-//
-//                        Platform.runLater(new Runnable() { // Run from JavaFX GUI
-//                            @Override
-//                            public void run() {
-//                                lblText.setText(text);
-//                            }
-//                        });
-//
-//                        Thread.sleep(200);
-//                    }
-//                } catch (InterruptedException ex) {
-//                }
-//            }
-//        }).start();
-//        Scene scene = new Scene(pane, 200, 50);
-//        primaryStage.setTitle("FlashText"); // Set the stage title
-//        primaryStage.setScene(scene); // Place the scene in the stage
-//        primaryStage.show(); // Display the stage
-//    }
-//}
-//package sample;
-//
-//
-//import javafx.animation.Animation;
-//import javafx.animation.Transition;
-//import javafx.application.Application;
-//import javafx.event.ActionEvent;
-//import javafx.event.EventHandler;
-//import javafx.geometry.Pos;
-//
-//import java.io.IOException;
-//import java.net.MalformedURLException;
-//import java.net.URL;
-//import java.net.URLConnection;
-//
-//
-//public class Main {
-//    public static void main(String[] args) throws Exception {
-////        try {
-////            URL url = new URL("http://www.google.com");
-////            URLConnection connection = url.openConnection();
-////            connection.connect();
-////            System.out.println("Internet is connected");
-////        } catch (MalformedURLException e) {
-////            System.out.println("Internet is not connected");
-////        } catch (IOException e) {
-////            System.out.println("Internet is not connected");
-////        }
-//        String s=" md fj ";
-//        boolean admit=true;
-//        String[] bite=new String[3];
-//        short a=0;
-//        for (int i = 0; i < s.length(); i++) {
-//            if (!String.valueOf(s.charAt(i)).equals(" ")){
-//                if (admit){
-//                    bite[a]=bite[a]+String.valueOf(s.charAt(i));
-//                }else {
-//                    admit=false;
-//                    a++;
-//                }
-//
-//            }
-//        }
-//        System.out.println(bite[0]);
-//        System.out.println(bite[1]);
-//        System.out.println(bite[2]);
-//
-//
-//    }
-//}

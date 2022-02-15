@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="855.0" prefWidth="860.0" style="-fx-background-color: white;" stylesheets="@../css/color.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddDocumentController">
+   <content>
+      <AnchorPane fx:id="anchorpane" prefHeight="2085.0" prefWidth="840.0" style="-fx-background-color: white;">
+         <children>
+            <VBox fx:id="vboxMain" layoutX="17.0" prefHeight="2555.0" prefWidth="665.0" AnchorPane.leftAnchor="90.0">
+               <children>
+                  <Label prefHeight="73.0" prefWidth="671.0" text="Hujjat qo'shish">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="256.0" text="Topshiriq bandi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="taskSection" layoutX="10.0" layoutY="288.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="95.0" prefHeight="39.0" prefWidth="256.0" text="Hujjatning turi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="documentType" layoutX="10.0" layoutY="134.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label prefHeight="39.0" prefWidth="256.0" text="Hujjatning sanasi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="documentDate" layoutX="10.0" layoutY="560.0" prefHeight="67.0" prefWidth="665.0" style=": black;" stylesheets="@../css/color.css">
+                     <styleClass>
+                        <String fx:value="bold" />
+                        <String fx:value="textsize" />
+                     </styleClass>
+                  </DatePicker>
+                  <Label prefHeight="39.0" prefWidth="256.0" text="Hujjatning raqami">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="documentNumber" layoutX="10.0" layoutY="1376.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="461.0" prefHeight="39.0" prefWidth="288.0" text="Ro'yxatga olingan kun">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="registrDay" layoutX="10.0" layoutY="424.0" prefHeight="67.0" prefWidth="665.0" style=": black;" stylesheets="@../css/color.css">
+                     <styleClass>
+                        <String fx:value="bold" />
+                        <String fx:value="textsize" />
+                     </styleClass>
+                  </DatePicker>
+                  <Label layoutX="10.0" layoutY="567.0" prefHeight="39.0" prefWidth="256.0" text="N_O">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="registrNumber" layoutX="10.0" layoutY="968.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="673.0" prefHeight="39.0" prefWidth="388.0" text="Hujjatning nomi yoki mazmuni">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="documentNameOrContent" prefHeight="230.0" prefWidth="665.0" styleClass="text-area" stylesheets="@../css/color.css" text="&#10;&#10;" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextArea>
+                  <Label layoutX="10.0" layoutY="779.0" prefHeight="39.0" prefWidth="256.0" text="Tashkilot">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="organizationName" prefHeight="134.0" prefWidth="665.0" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextArea>
+                  <Label layoutX="10.0" layoutY="1065.0" prefHeight="39.0" prefWidth="402.0" text="Rahbarning rezolyutsiyasi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="directorResolution" layoutX="10.0" layoutY="968.0" prefHeight="230.0" prefWidth="665.0" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextArea>
+                  <Label layoutX="10.0" layoutY="1201.0" prefHeight="39.0" prefWidth="402.0" text="Ijrochilar">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <MenuButton fx:id="effectorname" mnemonicParsing="false" prefHeight="67.0" prefWidth="665.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </MenuButton>
+                  <Label layoutX="10.0" layoutY="1337.0" prefHeight="39.0" prefWidth="402.0" text="Ijrochilar bo'limi">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="effectorSection" layoutX="10.0" layoutY="1769.0" prefHeight="134.0" prefWidth="665.0" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextArea>
+                  <Label layoutX="10.0" layoutY="1443.0" prefHeight="39.0" prefWidth="402.0" text="Ijro muddati">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="executionDeadline" prefHeight="67.0" prefWidth="665.0" style=": black;" stylesheets="@../css/color.css">
+                     <styleClass>
+                        <String fx:value="bold" />
+                        <String fx:value="textsize" />
+                     </styleClass>
+                  </DatePicker>
+                  <Label layoutX="10.0" layoutY="2425.0" prefHeight="39.0" prefWidth="402.0" text="Hujjatni yuklash">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="originalFileName" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="350.0" prefHeight="67.0" prefWidth="665.0" styleClass="borderradius" stylesheets="@../css/color.css">
+                     <graphic>
+                        <Button fx:id="uploadImage" alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="65.0" prefWidth="50.0" stylesheets="@../css/color.css">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/upload.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="imageButton" />
+                              <String fx:value="pressed" />
+                           </styleClass>
+                        </Button>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="71.0" prefWidth="665.0" spacing="180.0" stylesheets="@../css/color.css">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="back" mnemonicParsing="false" prefHeight="68.0" prefWidth="267.0" stylesheets="@../css/color.css" text="ORQAGA">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="backHover" />
+                              <String fx:value="backborder" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="save" mnemonicParsing="false" prefHeight="68.0" prefWidth="268.0" stylesheets="@../css/color.css" text="SAQLASH">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="hover" />
+                              <String fx:value="saveborder" />
+                              <String fx:value="pressed" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </content>
+</ScrollPane>

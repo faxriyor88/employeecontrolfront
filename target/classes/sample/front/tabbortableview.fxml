@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableview" prefHeight="1080.0" prefWidth="1915.0" stylesheets="@../css/tabpane.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TabBorTableViewController">
+   <columns>
+      <TableColumn fx:id="n" minWidth="7.999969482421875" prefWidth="43.0" text="N" />
+      <TableColumn fx:id="tasksection" prefWidth="109.00006103515625" text="Topshiriq &#10;bandi" />
+      <TableColumn fx:id="doctypenumdate" prefWidth="201.99996948242188" text="Hujjatning turi,&#10;sanasi va raqami" />
+      <TableColumn fx:id="registrday" minWidth="0.0" prefWidth="214.0" text="Ro'yxatga&#10;olingan kun va N" />
+      <TableColumn fx:id="docnameorcontent" minWidth="9.0" prefWidth="199.0" text="Hujjjatning nomi&#10;yoki mazmuni" />
+      <TableColumn fx:id="organization" minWidth="0.0" prefWidth="195.0" text="Tashkilot" />
+      <TableColumn fx:id="directorresolution" prefWidth="198.0" text="Rahbarning&#10;rezolyutsiyasi" />
+      <TableColumn fx:id="effectorname" prefWidth="165.0" text="Ijrochilar" />
+      <TableColumn fx:id="effectorsection" prefWidth="174.0" text="Ijrochi bo'limi" />
+      <TableColumn fx:id="executiondeadline" prefWidth="131.0" text="Ijro muddati" />
+      <TableColumn fx:id="leftday" prefWidth="123.0" text="Qolgan kun" />
+      <TableColumn fx:id="originalfilename" prefWidth="161.0" text="Topshiriq &#10;kontenti" />
+   </columns>
+</TableView>
